@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discos Favoritos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="icon" href="assets/icons/notaMusical.icon">
+</head>
+<body>
+    <header>
+        <img src="assets/images/musical.png" alt="musical" width="50">
+        <h1>Mis Discos Favoritos</h1>
+    </header>
+
+    <section class="mainMenu">
+        
+        <div id="searchOptions">
+            <select id="bandOptions">
+                <option selected disabled>Selecciona por bandas</option>
+                <option value="acdc">AC/DC</option> 
+                <option value="anthrax">Anthrax</option> 
+                <option value="beastieBoys">Beastie Boys</option>
+                <option value="bonJovi">Bon Jovi</option>
+                <option value="creedence">Creedence Clearwater Revival</option>
+                <option value="defLeppard">Def Leppard</option>
+                <option value="eminem">Eminem</option>
+                <option value="fasterPussycat">Faster Pussycat</option>
+                <option value="gorillaz">Gorillaz</option>
+                <option value="gunsNroses">Guns N' Roses</option>
+                <option value="inxs">INXS</option>
+                <option value="judasPriest">Judas Priest</option>
+                <option value="kc">KC & The Sunshine Band</option>
+                <option value="kiss">Kiss</option>
+                <option value="ledZeppelin">Led Zeppelin</option>
+                <option value="limpBizkit">Limp Bizkit</option>
+                <option value="melanieMartinez">Melanie Martinez</option>
+                <option value="metallica">Metallica</option>
+                <option value="michaelJackson">Michael Jackson</option>
+                <option value="molotov">Molotov</option>
+                <option value="motleyCrue">Mötley Crüe</option>
+                <option value="nazareth">Nazareth</option>
+                <option value="oliverTree">Oliver Tree</option>
+                <option value="poison">Poison</option>
+                <option value="prince">Prince</option>
+                <option value="queen">Queen</option>
+                <option value="rammstein">Rammstein</option>
+                <option value="ramones">The Ramones</option>
+                <option value="robZombie">Rob Zombie</option>
+                <option value="sinergia">Sinergia</option>
+                <option value="slayer">Slayer</option>
+                <option value="tigertailz">Tigertailz</option>
+                <option value="velvetRevolver">Velvet Revolver</option>
+                <option value="whiteZombie">White Zombie</option>
+                <option value="zztop">ZZ Top</option>
+            </select>
+        
+            <select id="musicalGenre">
+                <option selected disabled>Género Musical</option>
+                <option value="alternativo">Alternativo</option>
+                <option value="bluesRock">Blues Rock</option>
+                <option value="disco">Disco</option>
+                <option value="glamMetal">Glam Metal</option>
+                <option value="hardRock">Hard Rock</option>
+                <option value="heavyMetal">Heavy Metal</option>
+                <option value="hipHop">Hip Hop</option>
+                <option value="industrialMetal">Industrial Metal</option>
+                <option value="latino">Latino</option>
+                <option value="newWave">New Wave</option>
+                <option value="nuMetal">Nu Metal</option>
+                <option value="pop">Pop</option>
+                <option value="punkRock">Punk Rock</option>
+                <option value="thrashMetal">Thrash Metal</option>
+            </select>
+        
+            <select id="decade">
+                <option selected disabled>Década</option>
+                <option value="decade1960">60's</option>
+                <option value="decade1970">70's</option>
+                <option value="decade1980">80's</option>
+                <option value="decade1990">90's</option>
+                <option value="decade2000">00's</option>
+                <option value="decade2010">2010</option>
+                <option value="decade2020">2020</option>
+            </select> 
+            <button id="search" type="button" onclick="myFunction()">Buscar</button>    
+        </div>
+    </section>
+
+    <h2> O toca cualquier disco <br>para conocer mis temas favoritos</h2>
+    
+    <div id="disc-wrapper">
+        <div class="disk" data-artist="beastieBoys" data-genre="hipHop" data-decade="decade2000"> 
+            <img src="assets/images/Beastie_Boys_-_To_the_5_Boroughs.png" alt="beastieBoys" width="150">
+            <div class="discography-content">
+                <img src="assets/images/Beastie_Boys_-_To_the_5_Boroughs.png" alt="beastieBoys" width="300">
+                <div class="desc">                
+                    <p> Disco: "To the 5 Boroughs" Año: 2004 </p>
+                    <p> De: Beastie Boys </p> 
+                    <p> Genero: Hip Hop </p>
+                    <p> Mejores temas:
+                        <a href="https://www.youtube.com/watch?v=wai13EbZCCM" target="_blank">"Triple Trouble"</a>  y 
+                        <a href="https://www.youtube.com/watch?v=h459IftF-pU" target="_blank">"Ch-Check it out".</a> 
+                    </p>  
+                </div>
+            </div>
+        </div> 
+        <div class="disk" data-artist="defLeppard" data-genre="hardRock" data-decade="decade1980">         
+            <img src="assets/images/Def_Leppard_-_Hysteria_(vinyl_version).jpg" alt="defLeppard" width="150">
+            <div class="discography-content">
+                <img src="assets/images/Def_Leppard_-_Hysteria_(vinyl_version).jpg" alt="defLeppard" width="300">
+                <div class="desc">
+                    <p> Disco: "Hysteria" Año: 1987 </p>  
+                    <p> De: Def Leppard </p>
+                    <p> Genero: Hard Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=Rqs4cMyMLnY" target="_blank">"Pour some sugar on me"</a>, 
+                        <a href="https://www.youtube.com/watch?v=Tn1VN-dcvqI" target="_blank">"Animal"</a> y 
+                        <a href="https://www.youtube.com/watch?v=4O76L_x_zfA" target="_blank">"Armageddon it".</a> 
+                    </p>
+                </div>
+            </div>
+        </div>          
+        <div class="disk" data-artist="gunsNroses" data-genre="hardRock" data-decade="decade1980"> 
+            <img src="assets/images/guns-n-roses-appetite-for-destruction.jpg" alt="gunsNroses" width="150">
+            <div class="discography-content">
+                <img src="assets/images/guns-n-roses-appetite-for-destruction.jpg" alt="guns-n-roses" width="300">
+                <div class="desc">
+                    <p> Disco: "Appetite for Destruction" Año: 1987 </p>  
+                    <p> De: Guns N' Roses </p>
+                    <p> Genero: Hard Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=0CNPR2qNzxk" target="_blank">"Welcome to the Jungle"</a>, 
+                        <a href="https://www.youtube.com/watch?v=YxW9iekNSek" target="_blank">"Rocket Queen"</a> y 
+                        <a href="https://www.youtube.com/watch?v=RbItpD0qAk4&list=OLAK5uy_n13hmdsIozcCRyaY4cRDuuviphpfbzPrw" target="_blank">"Out Ta Get Me"</a>, 
+                    </p> 
+                </div>
+            </div>
+        </div>    
+        <div class="disk" data-artist="melanieMartinez" data-genre="alternativo" data-decade="decade2010"> 
+            <img src="assets/images/melanie-martinez-crybaby.jpg" alt="melanieMartinez" width="150">
+            <div class="discography-content">
+                <img src="assets/images/melanie-martinez-crybaby.jpg" alt="melanieMartinez" width="300">
+                <div class="desc">
+                    <p> Disco: "Cry Baby" Año: 2015 </p>
+                    <p> De: Melanie Martinez </p>
+                    <p> Genero: Alternativo </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=Fu5mBO3pH8k" target="_blank">"Dollhause"</a>, 
+                        <a href="https://www.youtube.com/watch?v=4CVa3z1kt3E" target="_blank">"Pacify Her"</a> y 
+                        <a href="https://www.youtube.com/watch?v=3I10gH32Xc8&list=RDFu5mBO3pH8k&index=17" target="_blank">"Alphabet Boy".</a> 
+                    </p> 
+                </div>
+            </div>
+        </div>     
+        <div class="disk" data-artist="metallica" data-genre="thrashMetal" data-decade="decade1980"> 
+            <img src="assets/images/metallica-and-justice-for-all.jpg" alt="metallica" width="150">
+            <div class="discography-content">
+                <img src="assets/images/metallica-and-justice-for-all.jpg" alt="metallica" width="300">
+                <div class="desc">  
+                    <p> Disco: "...And Justice for All" Año: 1988 </p>
+                    <p> De: Metallica </p>
+                    <p> Genero: Thrash Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=ioZeYpab3no" target="_blank">"Eye of the Beholder"</a>, 
+                        <a href="https://www.youtube.com/watch?v=qfehFvmwQlo" target="_blank">"Blackened"</a> y 
+                        <a href="https://www.youtube.com/watch?v=tyBiHyazMOc" target="_blank">"One".</a> 
+                    </p>
+                </div>
+            </div>
+        </div> 
+        <div class="disk" data-artist="motleyCrue" data-genre="heavyMetal" data-decade="decade1980"> 
+            <img src="assets/images/Motley-Crue-Dr-Feelgood.png" alt="motleyCrue" width="150">
+            <div class="discography-content">
+                <img src="assets/images/Motley-Crue-Dr-Feelgood.png" alt="motleyCrue" width="300">
+                <div class="desc">  
+                    <p> Disco: "Dr. Feelgood" Año: 1989 </p>
+                    <p> De: Mötley Crüe </p>
+                    <p> Genero: Heavy Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=oAXACgxeUvo" target="_blank">"Kickstart My Heart"</a>, 
+                        <a href="https://www.youtube.com/watch?v=rhT3MhzTsWQ" target="_blank">"Dr. Feelgood"</a> y 
+                        <a href="https://www.youtube.com/watch?v=FfvLPa1ALwI" target="_blank">"Same Ol' Situation (S.O.S.)".</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="poison" data-genre="glamMetal" data-decade="decade1980"> 
+            <img src="assets/images/poison-look-what-the-cat-dragged-in.png" alt="poison" width="150">
+            <div class="discography-content">
+                <img src="assets/images/poison-look-what-the-cat-dragged-in.png" alt="poison" width="300">
+                <div class="desc">
+                    <p> Disco: "Look what the cat dragged in" Año: 1986 </p>
+                    <p> De: Poison </p>
+                    <p> Genero: Glam Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=BMH-I6pE9kc" target="_blank">"Cry Tough"</a>, 
+                        <a href="https://www.youtube.com/watch?v=hV7w83eI8k4" target="_blank">"Talk Dirty to Me"</a> y 
+                        <a href="https://www.youtube.com/watch?v=4_nG3wXlin4" target="_blank">"Look what the cat dragged in".</a>
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="oliverTree" data-genre="alternativo" data-decade="decade2020"> 
+            <img src="assets/images/Oliver_Tree_Ugly_is_Beautiful.jpg" alt="oliverTree" width="150">
+            <div class="discography-content">
+                <img src="assets/images/Oliver_Tree_Ugly_is_Beautiful.jpg" alt="oliverTree" width="300">
+                <div class="desc">
+                    <p> Disco: "Ugly is beatiful" Año: 2020 </p>
+                    <p> De: Oliver Tree </p>
+                    <p> Genero: Alternativo </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=X7uKu8mlDDo" target="_blank">"Alien Boy"</a>, 
+                        <a href="https://www.youtube.com/watch?v=4IgQLoLqp3A" target="_blank">"Hurt"</a> y 
+                        <a href="https://www.youtube.com/watch?v=ZtH0WpQmvOo" target="_blank">"Bury Me Alive".</a> 
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="robZombie" data-genre="industrialMetal" data-decade="decade1990"> 
+            <img src="assets/images/rob-zombie-hellbilly-deluxe.jpg" alt="robZombie" width="150">
+            <div class="discography-content">
+                <img src="assets/images/rob-zombie-hellbilly-deluxe.jpg" alt="robZombie" width="300">
+                <div class="desc"> 
+                    <p> Disco: "Hellbilly Deluxe" Año: 1998 </p>
+                    <p> De: Rob Zombie </p>
+                    <p> Genero: Industrial Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=c9MYUk8unk0" target="_blank">"Dragula"</a>, 
+                        <a href="https://www.youtube.com/watch?v=MwnY8aLSxqE" target="_blank">"Living Dead Girl"</a> y 
+                        <a href="https://www.youtube.com/watch?v=QC0BBgOdspo" target="_blank">"Superbeast".</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="ramones" data-genre="punkRock" data-decade="decade1970"> 
+            <img src="assets/images/ramones-ramones.jpg" alt="ramones" width="150">
+            <div class="discography-content">
+                <img src="assets/images/ramones-ramones.jpg" alt="ramones" width="300">
+                <div class="desc">
+                    <p> Disco: "Ramones" Año: 1976 </p>
+                    <p> De: The Ramones </p>
+                    <p> Genero: Punk Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=skdE0KAFCEA" target="_blank">"Blitzkrieg Bop"</a>, 
+                        <a href="https://www.youtube.com/watch?v=ynmHLMIOXIg" target="_blank">"Judy is a Punk"</a> y 
+                        <a href="https://www.youtube.com/watch?v=BDvtkIp8UU4" target="_blank">"I wanna be your boyfriend".</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="limpBizkit" data-genre="nuMetal" data-decade="decade2000"> 
+            <img src="assets/images/Limp-bizkit-Chocolate Starfish and the Hot Dog Flavored Water.jpg" alt="limpBizkit" width="150">
+            <div class="discography-content">
+                <img src="assets/images/Limp-bizkit-Chocolate Starfish and the Hot Dog Flavored Water.jpg" alt="limpBizkit" width="300">
+                <div class="desc">
+                    <p> Disco: "Chocolate Starfish and the Hotdog Flavored Water" Año: 2000 </p>
+                    <p> De: Limp Bizkit </p>
+                    <p> Genero: Nu Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=BtKQ9F4rIII" target="_blank">"My Generation"</a>, 
+                        <a href="https://www.youtube.com/watch?v=LMsBHDoC51c" target="_blank">"My Way"</a> y 
+                        <a href="https://www.youtube.com/watch?v=RsXEbqS7cpE" target="_blank">"Rollin".</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="judasPriest" data-genre="heavyMetal" data-decade="decade1980"> 
+            <img src="assets/images/judas-priest-screaming-for-vengeance.jpg" alt="judasPriest" width="150">
+            <div class="discography-content">
+                <img src="assets/images/judas-priest-screaming-for-vengeance.jpg" alt="judasPriest" width="300">
+                <div class="desc">
+                    <p> Disco: "Screaming for Vengeance" Año: 1982 </p>
+                    <p> De: Judas Priest </p>
+                    <p> Genero: Heavy Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=9QP4a03oFbQ" target="_blank">"You've Got Another Thing Comin'"</a>
+                        <a href="https://www.youtube.com/watch?v=BKN2HEAr1VU" target="_blank">"Devil's Child"</a> y
+                        <a href="https://www.youtube.com/watch?v=3dbRdzATXBE" target="_blank">"Electric Eye"</a>  
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="creedence" data-genre="bluesRock" data-decade="decade1960"> 
+            <img src="assets/images/creedence-willy-and-the-poor-boys.jpg" alt="creedence" width="150">
+            <div class="discography-content">
+                <img src="assets/images/creedence-willy-and-the-poor-boys.jpg" alt="creedence" width="300">
+                <div class="desc">
+                    <p> Disco: "Willy And The Poor Boys" Año: 1969 </p>
+                    <p> De: Creedence Clearwater Revival </p>
+                    <p> Genero: Blues Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=r5NzAksjfDI" target="_blank">"Fortunate Son"</a>
+                        <a href="https://www.youtube.com/watch?v=vrMvblpZFq0" target="_blank">"Down On The Corner"</a> y
+                        <a href="https://www.youtube.com/watch?v=QBPqlxZD-h8" target="_blank">"Midnight Special"</a>  
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="slayer" data-genre="thrashMetal" data-decade="decade1980"> 
+            <img src="assets/images/slayer-reign-in-blood.jpg" alt="slayer" width="150">
+            <div class="discography-content">
+                <img src="assets/images/slayer-reign-in-blood.jpg" alt="slayer" width="300">
+                <div class="desc">
+                    <p> Disco: "Reign in Blood" Año: 1986 </p>
+                    <p> De: Slayer </p>
+                    <p> Genero: Thrash Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=Gy3BOmvLf2w" target="_blank">"Raining Blood"</a>
+                        <a href="https://www.youtube.com/watch?v=TnRZhLRv6eM" target="_blank">"Angel of Death"</a> y
+                        <a href="https://www.youtube.com/watch?v=FAxxyQk43nc" target="_blank">"Altar of Sacrifice"</a>  
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="tigertailz" data-genre="glamMetal" data-decade="decade1990"> 
+            <img src="assets/images/Tigertailz_bezerk.jpg" alt="tigertailz" width="150">
+            <div class="discography-content">
+                <img src="assets/images/Tigertailz_bezerk.jpg" alt="tigertailz" width="300">
+                <div class="desc">
+                    <p> Disco: "Bezerk" Año: 1990 </p>
+                    <p> De: Tigertailz </p>
+                    <p> Genero: Glam Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=L8-kB56vzd0" target="_blank">"Sick Sex"</a>
+                        <a href="https://www.youtube.com/watch?v=XAZbhJpFiNY" target="_blank">"Love Bomb Baby"</a> y
+                        <a href="https://www.youtube.com/watch?v=z1kcEc2emV0" target="_blank">"Noise Level Critical"</a>
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="bonJovi" data-genre="hardRock" data-decade="decade1980"> 
+            <img src="assets/images/bon-jovi-new-jersey.png" alt="bonJovi" width="150">
+            <div class="discography-content">
+                <img src="assets/images/bon-jovi-new-jersey.png" alt="bonJovi" width="300">
+                <div class="desc">
+                    <p> Disco: "New Jersey" Año: 1988 </p>
+                    <p> De: Bon Jovi </p>
+                    <p> Genero: Hard Rock </p>
+                    <p>  Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=AfI1QznxY5c" target="_blank">"Bad Medicine"</a>
+                        <a href="https://www.youtube.com/watch?v=H9zSYBVprpM" target="_blank">"Lay Your Hand on Me"</a> y
+                        <a href="https://www.youtube.com/watch?v=fhnfcHSPrfw" target="_blank">"I´ll Be There for You"</a> 
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="acdc" data-genre="hardRock" data-decade="decade1970"> 
+            <img src="assets/images/acdc-high-voltage.jpg" alt="acdc" width="150">
+            <div class="discography-content">
+                <img src="assets/images/acdc-high-voltage.jpg" alt="acdc" width="300">
+                <div class="desc">
+                    <p> Disco: "High Voltage" Año: 1976 </p>
+                    <p> De: AC/DC </p>
+                    <p> Genero: Hard Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=NhsK5WExrnE&list=OLAK5uy_n0N_Ec9Ty5idFdyqsmmv3_Qcxom7EcTBA&index=5" target="_blank">"T.N.T"</a>
+                        <a href="https://www.youtube.com/watch?v=vj_rvLVpqg8&list=OLAK5uy_n0N_Ec9Ty5idFdyqsmmv3_Qcxom7EcTBA" target="_blank">"It´s a Long Way to the Top"</a> y
+                        <a href="https://www.youtube.com/watch?v=e3RlOhqmMms" target="_blank">"High Voltage"</a>  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="anthrax" data-genre="thrashMetal" data-decade="decade1980"> 
+            <img src="assets/images/anthrax-among-the-living.png" alt="anthrax" width="150">
+            <div class="discography-content">
+                <img src="assets/images/anthrax-among-the-living.png" alt="anthrax" width="300">
+                <div class="desc">
+                    <p> Disco: "Among the Living" Año: 1987 </p>
+                    <p> De: Anthrax </p>
+                    <p> Genero: Thrash Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=O1hiX-t242Q" target="_blank">"Indians"</a>
+                        <a href="https://www.youtube.com/watch?v=XphUURIAx5g" target="_blank">"Caught in a Mosh"</a> y
+                        <a href="https://www.youtube.com/watch?v=i_Pga70f_YQ" target="_blank">"I am the Law"</a> 
+                    </p>  
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="whiteZombie" data-genre="heavyMetal" data-decade="decade1990"> 
+            <img src="assets/images/white-zombie-la-saxorcisto.jpg" alt="whiteZombie" width="150">
+            <div class="discography-content">
+                <img src="assets/images/white-zombie-la-saxorcisto.jpg" alt="whiteZombie" width="300">
+                <div class="desc">
+                    <p> Disco: "La Sexorcisto: Devil Music, Vol. 1" Año: 1992 </p>
+                    <p> De: White Zombie </p>
+                    <p> Genero: Heavy Metal </p>
+                    <p>  Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=_7CdugjjDfc" target="_blank">"Thunder Kiss´65"</a>
+                        <a href="https://www.youtube.com/watch?v=Mq05al1JtJw" target="_blank">"Welcome to the Planet Motherfucker"</a> y
+                        <a href="https://www.youtube.com/watch?v=Ssd9ap-lJ9E" target="_blank">"Black Sunshine"</a>
+                    </p>
+                </div>
+            </div>
+        </div>   
+        <div class="disk" data-artist="velvetRevolver" data-genre="hardRock" data-decade="decade2000"> 
+            <img src="assets/images/velvet-revolver-libertad.jpg" alt="velvetRevolver" width="150">
+            <div class="discography-content">
+                <img src="assets/images/velvet-revolver-libertad.jpg" alt="velvetRevolver" width="300">
+                <div class="desc">
+                    <p> Disco: "Libertad" Año: 2007 </p>
+                    <p> De: Velvet Revolver </p>
+                    <p> Genero: Hard Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=W0SONhzCgTg" target="_blank">"She Builds Quick Machines"</a>
+                        <a href="https://www.youtube.com/watch?v=fvZnK-f3mDU" target="_blank">"The Last Fight"</a> y
+                        <a href="https://www.youtube.com/watch?v=rlJJeLUVqBY" target="_blank">"Gravedancer"</a>  
+                    </p>     
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="kiss" data-genre="hardRock" data-decade="decade1970"> 
+            <img src="assets/images/kiss-destroyer.jpg" alt="kiss" width="150">
+            <div class="discography-content">
+                <img src="assets/images/kiss-destroyer.jpg" alt="kiss" width="300">
+                <div class="desc">
+                    <p> Disco: "Destroyer" Año: 1976 </p>
+                    <p> De: Kiss </p>
+                    <p> Genero: Hard Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=naXPoz1Du34" target="_blank">"Detroit Rock City"</a>
+                        <a href="https://www.youtube.com/watch?v=1dFByQyA49I" target="_blank">"God of Thunder"</a> y
+                        <a href="https://www.youtube.com/watch?v=nwsE7tVHk-k" target="_blank">"Do You Love Me?"</a>  
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="molotov" data-genre="latino" data-decade="decade2000"> 
+            <img src="assets/images/molotov-dance-and-dense-denso.jpg" alt="molotov" width="150">
+            <div class="discography-content">
+                <img src="assets/images/molotov-dance-and-dense-denso.jpg" alt="molotov" width="300">
+                <div class="desc">
+                    <p> Disco: "Dance and Dense Denso" Año: 2003 </p>
+                    <p> De: Molotov </p>
+                    <p> Genero: Latino </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=aokMSre4ZMs" target="_blank">"Frijolero"</a> y
+                        <a href="https://www.youtube.com/watch?v=zoHWj8MdCjE" target="_blank">"Hit Me"</a>  
+                    </p>     
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="fasterPussycat" data-genre="glamMetal" data-decade="decade1980"> 
+            <img src="assets/images/fasterPussycatWake-Me-When-It's-Over.jpg" alt="fasterPussycat" width="150">
+            <div class="discography-content">
+                <img src="assets/images/fasterPussycatWake-Me-When-It's-Over.jpg" alt="fasterPussycat" width="300">
+                <div class="desc">
+                    <p> Disco: "Wake me when It´s over" Año: 1989 </p>
+                    <p> De: Faster Pussycat </p>
+                    <p> Genero: Glam Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=6I0dJUkkIHM" target="_blank">"Hause of Pain"</a>
+                        <a href="https://www.youtube.com/watch?v=Ag4ghpcwRts" target="_blank">"Slip of the Tongue"</a> y
+                        <a href="https://www.youtube.com/watch?v=SAb87FSdZOk" target="_blank">"Poison Ivy"</a>  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="eminem" data-genre="hipHop" data-decade="decade2010"> 
+            <img src="assets/images/eminem-the-marshall-mathersLp2.jpg" alt="eminem" width="150">
+            <div class="discography-content">
+                <img src="assets/images/eminem-the-marshall-mathersLp2.jpg" alt="eminem" width="300">
+                <div class="desc">
+                    <p> Disco: "The Marshall Mathers LP2" Año: 2013 </p>
+                    <p> De: Eminem </p>
+                    <p> Genero: Hip Hop </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=AvKCib3O03g" target="_blank">"Berzerk"</a> y
+                        <a href="https://www.youtube.com/watch?v=9dojk4u7vUU" target="_blank">"Rad God"</a>  
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="zztop" data-genre="bluesRock" data-decade="decade1990"> 
+            <img src="assets/images/zztop-greatest-hits.jpg" alt="zztop" width="150">
+            <div class="discography-content">
+                <img src="assets/images/zztop-greatest-hits.jpg" alt="zztop" width="300">
+                <div class="desc">
+                    <p> Disco: "Greatest Hits" Año: 1992 </p>
+                    <p> De: ZZ Top </p>
+                    <p> Genero: Blues Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=k4VFFBCa5Aw" target="_blank">"Gimme All Your Lovin"</a>
+                        <a href="https://www.youtube.com/watch?v=lyIPvm4JukQ" target="_blank">"Sharp Dressed Man"</a> y
+                        <a href="https://www.youtube.com/watch?v=vqz0wRaie2g" target="_blank">"La Grange"</a>  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="ledZeppelin" data-genre="hardRock" data-decade="decade1970"> 
+            <img src="assets/images/led-zeppelin-iv.jpg" alt="ledZeppelin" width="150">
+            <div class="discography-content">
+                <img src="assets/images/led-zeppelin-iv.jpg" alt="ledZeppelin" width="300">
+                <div class="desc">
+                    <p> Disco: "Led Zeppelin IV" Año: 1971 </p>
+                    <p> De: Led Zeppelin </p>
+                    <p> Genero: Hard Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=dIReHbOmU1U" target="_blank">"Black Dog"</a>
+                        <a href="https://www.youtube.com/watch?v=CL08b5dc86s" target="_blank">"Rock and Roll"</a> y
+                        <a href="https://www.youtube.com/watch?v=QkF3oxziUI4" target="_blank">"Stairway to Heaven"</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="nazareth" data-genre="hardRock" data-decade="decade1970"> 
+            <img src="assets/images/nazareth-hair-of-the-dog.jpg" alt="nazareth" width="150">
+            <div class="discography-content">
+                <img src="assets/images/nazareth-hair-of-the-dog.jpg" alt="nazareth" width="300">
+                <div class="desc">
+                    <p> Disco: "Hair of the Dog" Año: 1975 </p>
+                    <p> De: Nazareth </p>
+                    <p> Genero: Hard Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=Ya9f-DlYL24" target="_blank">"Love Hurts"</a> y
+                        <a href="https://www.youtube.com/watch?v=x-Bg0jjJhgQ" target="_blank">"Hair of the Dog"</a>
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="kc" data-genre="disco" data-decade="decade1970"> 
+            <img src="assets/images/KC-and the sunshine band-Part3.jpg" alt="kc" width="150">
+            <div class="discography-content">
+                <img src="assets/images/KC-and the sunshine band-Part3.jpg" alt="kc" width="300">
+                <div class="desc">
+                    <p> Disco: "Part 3" Año: 1976 </p>
+                    <p> De: KC & Sunshine Band </p>
+                    <p> Genero: Disco </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=ibvYxe43cCQ" target="_blank">"Keep It Comin' Love"</a>
+                        <a href="https://www.youtube.com/watch?v=3hgF0PNiNC8" target="_blank">"I'm Your Boogie Man"</a> y
+                        <a href="https://www.youtube.com/watch?v=LuKd8EUrkpU" target="_blank">"(Shake, Shake, Shake) Shake Your Booty"</a>
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="prince" data-genre="pop" data-decade="decade1990"> 
+            <img src="assets/images/prince-the hits.jpg" alt="prince" width="150">
+            <div class="discography-content">
+                <img src="assets/images/prince-the hits.jpg" alt="prince" width="300">
+                <div class="desc">
+                    <p> Disco: "The Hits/The B-Sides" Año: 1993 </p>
+                    <p> De: Prince </p>
+                    <p> Genero: Pop </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=oTUSeac7IuQ" target="_blank">"When Doves Cry"</a>
+                        <a href="https://www.youtube.com/watch?v=rH9CZuuKpSg" target="_blank">"Kiss"</a> y
+                        <a href="https://www.youtube.com/watch?v=3_MxoInzekg" target="_blank">"Cream"</a>
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="inxs" data-genre="newWave" data-decade="decade1990"> 
+            <img src="assets/images/Inxs_X.jpg" alt="inxs" width="150">
+            <div class="discography-content">
+                <img src="assets/images/Inxs_X.jpg" alt="inxs" width="300">
+                <div class="desc">
+                    <p> Disco: "X" Año: 1990 </p>
+                    <p> De: INXS </p>
+                    <p> Genero: New Wave </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=rxVNUNnzL6Y" target="_blank">"Disappear"</a> y
+                        <a href="https://www.youtube.com/watch?v=1Wb-4xjw_Ko" target="_blank">"Suicide Blonde"</a>
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="michaelJackson" data-genre="pop" data-decade="decade1980"> 
+            <img src="assets/images/michael-jackson-bad.jpg" alt="jackson" width="150">
+            <div class="discography-content">
+                <img src="assets/images/michael-jackson-bad.jpg" alt="jackson" width="300">
+                <div class="desc">
+                    <p> Disco: "Bad" Año: 1987 </p>
+                    <p> De: Michael Jackson </p>
+                    <p> Genero: Pop </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=dIQmcwSg0nU" target="_blank">"Bad"</a>,
+                        <a href="https://www.youtube.com/watch?v=_mMyPJSx8RU" target="_blank">"Smooth Criminal"</a> y
+                        <a href="https://www.youtube.com/watch?v=uzbnrfd9vLQ" target="_blank">"The Way You Make Me Feel"</a>
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="rammstein" data-genre="industrialMetal" data-decade="decade1990"> 
+            <img src="assets/images/rammstein.jpg" alt="rammstein" width="150">
+            <div class="discography-content">
+                <img src="assets/images/rammstein.jpg" alt="rammstein" width="300">
+                <div class="desc">
+                    <p> Disco: "Sehnsucht" Año: 1997 </p>
+                    <p> De: Rammstein </p>
+                    <p> Genero: Industrial Metal </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=FzpMfU950NU" target="_blank">"Engel"</a> y
+                        <a href="https://www.youtube.com/watch?v=rkjPwnn3wG4" target="_blank">"Du Hast"</a>
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="queen" data-genre="hardRock" data-decade="decade1980"> 
+            <img src="assets/images/queen-greatest hits.jpg" alt="queen" width="150">
+            <div class="discography-content">
+                <img src="assets/images/queen-greatest hits.jpg" alt="queen" width="300">
+                <div class="desc">
+                    <p> Disco: "Greatest Hits" Año: 1981 </p>
+                    <p> De: Queen </p>
+                    <p> Genero: Hard Rock </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=ftJGzhQsLgM" target="_blank">"Bohemiam Rhapsody"</a>
+                        <a href="https://www.youtube.com/watch?v=x8hUwP_5Qc4" target="_blank">"Somebody to Love"</a> y
+                        <a href="https://www.youtube.com/watch?v=BOCe62_vdzY" target="_blank">"Crazy Little Thing Called Love"</a>
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="gorillaz" data-genre="alternativo" data-decade="decade2000"> 
+            <img src="assets/images/gorillaz-demon days.jpg" alt="gorillaz" width="150">
+            <div class="discography-content">
+                <img src="assets/images/gorillaz-demon days.jpg" alt="gorillaz" width="300">
+                <div class="desc">
+                    <p> Disco: "Demon Days" Año: 2005 </p>
+                    <p> De: Gorillaz </p>
+                    <p> Genero: Alternativo </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=LpMsqFc7-Z4" target="_blank">"Feel Good Inc."</a> y
+                        <a href="https://www.youtube.com/watch?v=w754D0qu3-A" target="_blank">"DARE"</a>
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="disk" data-artist="sinergia" data-genre="latino" data-decade="decade2000"> 
+            <img src="assets/images/Sinergia-Delirio.jpg" alt="sinergia" width="150">
+            <div class="discography-content">
+                <img src="assets/images/Sinergia-Delirio.jpg" alt="sinergia" width="300">
+                <div class="desc">
+                    <p> Disco: "Delirio" Año: 2007 </p>
+                    <p> De: Sinergia </p>
+                    <p> Genero: Latino </p>
+                    <p> Mejores temas: 
+                        <a href="https://www.youtube.com/watch?v=kdjMrX-rQwg" target="_blank">"Jefe"</a>
+                        <a href="https://www.youtube.com/watch?v=mZYkhCD_ruA" target="_blank">"Niños Araña"</a> y
+                        <a href="https://www.youtube.com/watch?v=K7UJUZoV4Qw" target="_blank">"Te enojai por todo"</a>
+                    </p>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="social">
+        <div id="networking">
+            <h1>Mis Redes</h1>
+            <div class="links">
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>               
+        </div>
+        <h3>Creado por<br>Erika Hernández O.</h3>
+        <img src="assets/images/musical.png" alt="musical" width="50">    
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

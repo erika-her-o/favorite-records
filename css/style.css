@@ -1,0 +1,154 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color:rgba(18, 18, 26);
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ header img {
+  width: 50px;
+  margin: 10px;
+}
+
+.mainMenu {
+  width: 100%;
+  height: 100px;
+  background: url(../assets/images/fondo\ ondas\ de\ sonido\ colores.jpg) no-repeat center center/cover;
+  padding: 80px;
+  display: flex;
+  display: inline-block;
+  align-items: center;
+}
+h1 {
+  font-size: 35px;
+  color: rgb(101, 54, 212);
+  font-family: 'Fredericka the Great', cursive;
+}
+
+h2 {
+  font-size: 30px;
+  color: rgb(182, 141, 216);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+#searchOptions
+#bandOptions
+#search {
+  margin : 50px;
+}
+
+#bandOptions,
+#musicalGenre,
+#decade {
+  padding: 15px;
+  font-size: 15px;
+}
+
+#search {
+  border-radius: 10px;
+  padding: 12px;
+  display: block;
+  margin: 30px auto;
+}
+
+p {
+  text-align: center;
+  margin: 5px;
+}
+
+#disc-wrapper {
+  margin: 70px 10%;
+}
+
+#disc-wrapper img {
+  float: right;
+  overflow: auto;
+  margin: 18px;
+}
+
+button {
+  background-color: rgb(101, 54, 212);
+}
+
+button:hover {
+  background: rgb(216, 98, 206);
+}
+
+select button {
+  text-align: center;
+  position:static;
+  display: block;
+} 
+
+.disk {
+  position: relative;
+  display: inline-block;
+  flex: center;
+}
+  
+.discography-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 10px 10px 10px rgb(101, 54, 212);
+  background-color:rgba(18, 18, 26);
+  color: antiquewhite;
+}
+  
+.disk:hover .discography-content {
+  display: block;
+}
+  
+.desc {
+  padding: 8px;
+  text-align: center;
+}
+
+.social {
+  margin: 50px;
+}
+
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 30px;
+  font-size: 40px;
+}
+
+.fab:hover {
+  color: rgb(216, 98, 206);
+}
+
+footer {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(182, 177, 233);
+}
+
+
